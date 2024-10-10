@@ -1,0 +1,27 @@
+[1.493s] Invoking command in '/home/abdelrhaman/robot/build/control': PYTHONPATH=/home/abdelrhaman/robot/build/control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abdelrhaman/robot/install/control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/abdelrhaman/robot/build/control/build --no-deps symlink_data
+[1.984s] running develop
+[1.984s] /home/abdelrhaman/.local/lib/python3.10/site-packages/setuptools/command/easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.984s]   warnings.warn(
+[2.246s] running egg_info
+[2.246s] creating control.egg-info
+[2.284s] writing control.egg-info/PKG-INFO
+[2.317s] writing dependency_links to control.egg-info/dependency_links.txt
+[2.411s] writing entry points to control.egg-info/entry_points.txt
+[2.473s] writing requirements to control.egg-info/requires.txt
+[2.505s] writing top-level names to control.egg-info/top_level.txt
+[2.505s] writing manifest file 'control.egg-info/SOURCES.txt'
+[2.553s] reading manifest file 'control.egg-info/SOURCES.txt'
+[2.553s] writing manifest file 'control.egg-info/SOURCES.txt'
+[2.593s] running build_ext
+[2.593s] Creating /home/abdelrhaman/robot/install/control/lib/python3.10/site-packages/control.egg-link (link to .)
+[2.593s] Installing pid script to /home/abdelrhaman/robot/install/control/lib/control
+[2.593s] Installing robot_class script to /home/abdelrhaman/robot/install/control/lib/control
+[2.593s] 
+[2.593s] Installed /home/abdelrhaman/robot/build/control
+[2.594s] running symlink_data
+[2.594s] creating /home/abdelrhaman/robot/install/control/share/ament_index
+[2.594s] creating /home/abdelrhaman/robot/install/control/share/ament_index/resource_index
+[2.594s] creating /home/abdelrhaman/robot/install/control/share/ament_index/resource_index/packages
+[2.594s] symbolically linking /home/abdelrhaman/robot/build/control/resource/control -> /home/abdelrhaman/robot/install/control/share/ament_index/resource_index/packages
+[2.594s] symbolically linking /home/abdelrhaman/robot/build/control/package.xml -> /home/abdelrhaman/robot/install/control/share/control
+[2.616s] Invoked command in '/home/abdelrhaman/robot/build/control' returned '0': PYTHONPATH=/home/abdelrhaman/robot/build/control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abdelrhaman/robot/install/control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/abdelrhaman/robot/build/control/build --no-deps symlink_data
