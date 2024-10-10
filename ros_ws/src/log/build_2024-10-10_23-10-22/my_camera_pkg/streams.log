@@ -1,0 +1,19 @@
+[1.059s] Invoking command in '/home/abdelrhaman/robot/ros_ws/src/build/my_camera_pkg': PYTHONPATH=/home/abdelrhaman/robot/ros_ws/src/build/my_camera_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abdelrhaman/robot/ros_ws/src/install/my_camera_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/abdelrhaman/robot/ros_ws/src/build/my_camera_pkg/build --no-deps symlink_data
+[1.542s] running develop
+[1.542s] /home/abdelrhaman/.local/lib/python3.10/site-packages/setuptools/command/easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.542s]   warnings.warn(
+[1.802s] running egg_info
+[1.840s] writing my_camera_pkg.egg-info/PKG-INFO
+[1.872s] writing dependency_links to my_camera_pkg.egg-info/dependency_links.txt
+[1.966s] writing entry points to my_camera_pkg.egg-info/entry_points.txt
+[2.028s] writing requirements to my_camera_pkg.egg-info/requires.txt
+[2.060s] writing top-level names to my_camera_pkg.egg-info/top_level.txt
+[2.106s] reading manifest file 'my_camera_pkg.egg-info/SOURCES.txt'
+[2.107s] writing manifest file 'my_camera_pkg.egg-info/SOURCES.txt'
+[2.146s] running build_ext
+[2.146s] Creating /home/abdelrhaman/robot/ros_ws/src/install/my_camera_pkg/lib/python3.10/site-packages/my-camera-pkg.egg-link (link to .)
+[2.146s] Installing line script to /home/abdelrhaman/robot/ros_ws/src/install/my_camera_pkg/lib/my_camera_pkg
+[2.147s] 
+[2.147s] Installed /home/abdelrhaman/robot/ros_ws/src/build/my_camera_pkg
+[2.147s] running symlink_data
+[2.169s] Invoked command in '/home/abdelrhaman/robot/ros_ws/src/build/my_camera_pkg' returned '0': PYTHONPATH=/home/abdelrhaman/robot/ros_ws/src/build/my_camera_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abdelrhaman/robot/ros_ws/src/install/my_camera_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/abdelrhaman/robot/ros_ws/src/build/my_camera_pkg/build --no-deps symlink_data

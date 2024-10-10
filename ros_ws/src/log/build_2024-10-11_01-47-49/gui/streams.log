@@ -1,0 +1,20 @@
+[1.492s] Invoking command in '/home/abdelrhaman/robot/ros_ws/src/build/gui': PYTHONPATH=/home/abdelrhaman/robot/ros_ws/src/build/gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abdelrhaman/robot/ros_ws/src/install/gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/abdelrhaman/robot/ros_ws/src/build/gui/build --no-deps symlink_data
+[1.986s] running develop
+[1.986s] /home/abdelrhaman/.local/lib/python3.10/site-packages/setuptools/command/easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.986s]   warnings.warn(
+[2.251s] running egg_info
+[2.289s] writing gui.egg-info/PKG-INFO
+[2.321s] writing dependency_links to gui.egg-info/dependency_links.txt
+[2.416s] writing entry points to gui.egg-info/entry_points.txt
+[2.478s] writing requirements to gui.egg-info/requires.txt
+[2.510s] writing top-level names to gui.egg-info/top_level.txt
+[2.557s] reading manifest file 'gui.egg-info/SOURCES.txt'
+[2.558s] writing manifest file 'gui.egg-info/SOURCES.txt'
+[2.597s] running build_ext
+[2.597s] Creating /home/abdelrhaman/robot/ros_ws/src/install/gui/lib/python3.10/site-packages/gui.egg-link (link to .)
+[2.598s] Installing GuiTabs script to /home/abdelrhaman/robot/ros_ws/src/install/gui/lib/gui
+[2.598s] Installing line script to /home/abdelrhaman/robot/ros_ws/src/install/gui/lib/gui
+[2.598s] 
+[2.598s] Installed /home/abdelrhaman/robot/ros_ws/src/build/gui
+[2.598s] running symlink_data
+[2.623s] Invoked command in '/home/abdelrhaman/robot/ros_ws/src/build/gui' returned '0': PYTHONPATH=/home/abdelrhaman/robot/ros_ws/src/build/gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abdelrhaman/robot/ros_ws/src/install/gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/abdelrhaman/robot/ros_ws/src/build/gui/build --no-deps symlink_data

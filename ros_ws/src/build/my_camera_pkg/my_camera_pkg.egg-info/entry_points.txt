@@ -1,0 +1,2 @@
+[console_scripts]
+line = my_camera_pkg.line:main

@@ -1,0 +1,10 @@
+[0.000000] (-) TimerEvent: {}
+[0.000212] (my_camera_pkg) JobQueued: {'identifier': 'my_camera_pkg', 'dependencies': OrderedDict()}
+[0.000259] (my_camera_pkg) JobStarted: {'identifier': 'my_camera_pkg'}
+[0.099573] (-) TimerEvent: {}
+[0.199962] (-) TimerEvent: {}
+[0.300356] (-) TimerEvent: {}
+[0.400771] (-) TimerEvent: {}
+[0.466362] (my_camera_pkg) StderrLine: {'line': b'Traceback (most recent call last):\n  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__\n    rc = await self.task(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__\n    return await task_method(*args, **kwargs)\n  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_python/build.py", line 87, in build\n    create_file(\n  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 274, in create_file\n    with open(dst, \'w\') as h:\nFileNotFoundError: [Errno 2] No such file or directory: \'/home/abdelrhaman/robot/ros_ws/src/install/my_camera_pkg/share/ament_index/resource_index/packages/my_camera_pkg\'\n'}
+[0.466850] (my_camera_pkg) JobEnded: {'identifier': 'my_camera_pkg', 'rc': 1}
+[0.476792] (-) EventReactorShutdown: {}

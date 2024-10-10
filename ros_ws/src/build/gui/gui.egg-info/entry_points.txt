@@ -1,0 +1,3 @@
+[console_scripts]
+GuiTabs = gui.GuiTabs:main
+line = gui.line:main

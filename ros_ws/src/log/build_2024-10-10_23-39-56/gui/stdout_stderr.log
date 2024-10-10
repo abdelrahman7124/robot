@@ -1,0 +1,23 @@
+running develop
+/home/abdelrhaman/.local/lib/python3.10/site-packages/setuptools/command/easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+creating gui.egg-info
+writing gui.egg-info/PKG-INFO
+writing dependency_links to gui.egg-info/dependency_links.txt
+writing entry points to gui.egg-info/entry_points.txt
+writing requirements to gui.egg-info/requires.txt
+writing top-level names to gui.egg-info/top_level.txt
+writing manifest file 'gui.egg-info/SOURCES.txt'
+reading manifest file 'gui.egg-info/SOURCES.txt'
+writing manifest file 'gui.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/abdelrhaman/robot/ros_ws/src/install/gui/lib/python3.10/site-packages/gui.egg-link (link to .)
+Installing line script to /home/abdelrhaman/robot/ros_ws/src/install/gui/lib/my_camera_pkg
+
+Installed /home/abdelrhaman/robot/ros_ws/src/build/gui
+running symlink_data
+creating /home/abdelrhaman/robot/ros_ws/src/install/gui/share/ament_index
+creating /home/abdelrhaman/robot/ros_ws/src/install/gui/share/ament_index/resource_index
+creating /home/abdelrhaman/robot/ros_ws/src/install/gui/share/ament_index/resource_index/packages
+error: can't copy '/home/abdelrhaman/robot/ros_ws/src/build/gui/resource/gui': doesn't exist or not a regular file

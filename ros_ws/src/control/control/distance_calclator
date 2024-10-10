@@ -1,0 +1,101 @@
+import numpy as np
+import rclpy
+from rclpy.node import Node
+from sensor_msgs.msg import Imu
+from std_msgs.msg import Float32
+from filterpy.kalman import KalmanFilter
+
+
+class DistanceCalculator(Node):
+    def __init__(self):
+        super().__init__('distance_calculator')
+        self.subscription = self.create_subscription(Imu, 'Imu_data', self.listener_callback, 10)
+        self.publisher = self.create_publisher(Float32, 'distance', 10)
+
+        # State variables
+        self.vx = 0
+        self.vy = 0
+        self.vz = 0
+        self.distance = 0
+        self.filtered_distance = 0  # For low-pass filtered distance
+        self.dt = 0.1
+
+        # Low-pass filter constant (alpha) - tune this value as needed (0 < alpha < 1)
+        self.alpha = 0.1  
+
+        # Kalman filters for x, y, z accelerations
+        self.kf_ax = self.kalman_filter()
+        self.kf_ay = self.kalman_filter()
+        self.kf_az = self.kalman_filter()
+
+    def kalman_filter(self):
+        # Initialize a 1D Kalman Filter for each axis
+        kf = KalmanFilter(dim_x=2, dim_z=1)
+        kf.x = np.array([[0.], [0.]])  # Initial state 
+        kf.F = np.array([[1., self.dt], [0., 1.]])  # State transition matrix
+        kf.H = np.array([[1., 0.]])  # Measurement function
+        kf.P *= 1000.  # Covariance matrix
+        kf.R = 5  # Measurement noise
+        kf.Q = np.array([[1e-4, 0.], [0., 1e-4]])  # Process noise
+        return kf
+
+    def listener_callback(self, msg):
+        # Get raw IMU acceleration
+        ax = msg.linear_acceleration.x
+        ay = msg.linear_acceleration.y
+        az = msg.linear_acceleration.z
+
+        # Apply Kalman filter to acceleration
+        self.kf_ax.predict()
+        self.kf_ay.predict()
+        self.kf_az.predict()
+
+        self.kf_ax.update(ax)
+        self.kf_ay.update(ay)
+        self.kf_az.update(az)
+
+        ax_filtered = self.kf_ax.x[0][0]
+        ay_filtered = self.kf_ay.x[0][0]
+        az_filtered = self.kf_az.x[0][0]
+
+        # Logging the filtered acceleration values
+        self.get_logger().info(f"Kalman Filtered Acceleration: ax: {ax_filtered}, ay: {ay_filtered}, az: {az_filtered}")
+
+        # Integrate acceleration to get velocity
+        self.vx += ax_filtered * self.dt
+        self.vy += ay_filtered * self.dt
+        self.vz += az_filtered * self.dt
+
+        # Calculate distance
+        self.calculate_distance()
+
+    def calculate_distance(self):
+        # Calculate the current distance based on velocity
+        current_distance = np.sqrt(self.vx**2 + self.vy**2 + self.vz**2) * self.dt
+        
+        # Low-pass filter to smooth the distance
+        self.filtered_distance = self.alpha * current_distance + (1 - self.alpha) * self.filtered_distance
+        
+        # Update the total distance
+        self.distance += self.filtered_distance
+        
+        # Publish the filtered distance
+        self.publish_distance()
+
+    def publish_distance(self):
+        # Publish the calculated distance
+        msg = Float32()
+        msg.data = self.distance
+        self.publisher.publish(msg)
+
+
+def main(args=None):
+    rclpy.init(args=args)
+    distance_calculator_node = DistanceCalculator()
+    rclpy.spin(distance_calculator_node)
+    distance_calculator_node.destroy_node()
+    rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()

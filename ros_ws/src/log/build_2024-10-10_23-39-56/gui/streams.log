@@ -1,0 +1,25 @@
+[1.090s] Invoking command in '/home/abdelrhaman/robot/ros_ws/src/build/gui': PYTHONPATH=/home/abdelrhaman/robot/ros_ws/src/build/gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abdelrhaman/robot/ros_ws/src/install/gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/abdelrhaman/robot/ros_ws/src/build/gui/build --no-deps symlink_data
+[1.582s] running develop
+[1.583s] /home/abdelrhaman/.local/lib/python3.10/site-packages/setuptools/command/easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.583s]   warnings.warn(
+[1.844s] running egg_info
+[1.844s] creating gui.egg-info
+[1.881s] writing gui.egg-info/PKG-INFO
+[1.912s] writing dependency_links to gui.egg-info/dependency_links.txt
+[2.004s] writing entry points to gui.egg-info/entry_points.txt
+[2.066s] writing requirements to gui.egg-info/requires.txt
+[2.097s] writing top-level names to gui.egg-info/top_level.txt
+[2.097s] writing manifest file 'gui.egg-info/SOURCES.txt'
+[2.142s] reading manifest file 'gui.egg-info/SOURCES.txt'
+[2.143s] writing manifest file 'gui.egg-info/SOURCES.txt'
+[2.181s] running build_ext
+[2.181s] Creating /home/abdelrhaman/robot/ros_ws/src/install/gui/lib/python3.10/site-packages/gui.egg-link (link to .)
+[2.182s] Installing line script to /home/abdelrhaman/robot/ros_ws/src/install/gui/lib/my_camera_pkg
+[2.182s] 
+[2.182s] Installed /home/abdelrhaman/robot/ros_ws/src/build/gui
+[2.182s] running symlink_data
+[2.182s] creating /home/abdelrhaman/robot/ros_ws/src/install/gui/share/ament_index
+[2.182s] creating /home/abdelrhaman/robot/ros_ws/src/install/gui/share/ament_index/resource_index
+[2.182s] creating /home/abdelrhaman/robot/ros_ws/src/install/gui/share/ament_index/resource_index/packages
+[2.182s] error: can't copy '/home/abdelrhaman/robot/ros_ws/src/build/gui/resource/gui': doesn't exist or not a regular file
+[2.204s] Invoked command in '/home/abdelrhaman/robot/ros_ws/src/build/gui' returned '1': PYTHONPATH=/home/abdelrhaman/robot/ros_ws/src/build/gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abdelrhaman/robot/ros_ws/src/install/gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/abdelrhaman/robot/ros_ws/src/build/gui/build --no-deps symlink_data

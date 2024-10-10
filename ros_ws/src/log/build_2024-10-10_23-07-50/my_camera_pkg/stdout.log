@@ -1,0 +1,20 @@
+running develop
+running egg_info
+creating my_camera_pkg.egg-info
+writing my_camera_pkg.egg-info/PKG-INFO
+writing dependency_links to my_camera_pkg.egg-info/dependency_links.txt
+writing requirements to my_camera_pkg.egg-info/requires.txt
+writing top-level names to my_camera_pkg.egg-info/top_level.txt
+writing manifest file 'my_camera_pkg.egg-info/SOURCES.txt'
+reading manifest file 'my_camera_pkg.egg-info/SOURCES.txt'
+writing manifest file 'my_camera_pkg.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/abdelrhaman/robot/ros_ws/src/install/my_camera_pkg/lib/python3.10/site-packages/my-camera-pkg.egg-link (link to .)
+
+Installed /home/abdelrhaman/robot/ros_ws/src/build/my_camera_pkg
+running symlink_data
+creating /home/abdelrhaman/robot/ros_ws/src/install/my_camera_pkg/share/ament_index
+creating /home/abdelrhaman/robot/ros_ws/src/install/my_camera_pkg/share/ament_index/resource_index
+creating /home/abdelrhaman/robot/ros_ws/src/install/my_camera_pkg/share/ament_index/resource_index/packages
+symbolically linking /home/abdelrhaman/robot/ros_ws/src/build/my_camera_pkg/resource/my_camera_pkg -> /home/abdelrhaman/robot/ros_ws/src/install/my_camera_pkg/share/ament_index/resource_index/packages
+symbolically linking /home/abdelrhaman/robot/ros_ws/src/build/my_camera_pkg/package.xml -> /home/abdelrhaman/robot/ros_ws/src/install/my_camera_pkg/share/my_camera_pkg

@@ -1,0 +1,4 @@
+[console_scripts]
+distance = control.distance_calculator:main
+pid = control.pid:main
+robot_class = control.robotClass:main

@@ -1,0 +1,19 @@
+[1.517s] Invoking command in '/home/abdelrhaman/robot/ros_ws/src/build/control': PYTHONPATH=/home/abdelrhaman/robot/ros_ws/src/build/control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abdelrhaman/robot/ros_ws/src/install/control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/abdelrhaman/robot/ros_ws/src/build/control/build --no-deps symlink_data
+[2.013s] running develop
+[2.013s] /home/abdelrhaman/.local/lib/python3.10/site-packages/setuptools/command/easy_install.py:144: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.013s]   warnings.warn(
+[2.282s] running egg_info
+[2.321s] writing control.egg-info/PKG-INFO
+[2.354s] writing dependency_links to control.egg-info/dependency_links.txt
+[2.450s] writing entry points to control.egg-info/entry_points.txt
+[2.514s] writing requirements to control.egg-info/requires.txt
+[2.546s] writing top-level names to control.egg-info/top_level.txt
+[2.595s] reading manifest file 'control.egg-info/SOURCES.txt'
+[2.595s] writing manifest file 'control.egg-info/SOURCES.txt'
+[2.635s] running build_ext
+[2.635s] Creating /home/abdelrhaman/robot/ros_ws/src/install/control/lib/python3.10/site-packages/control.egg-link (link to .)
+[2.635s] Installing pid script to /home/abdelrhaman/robot/ros_ws/src/install/control/lib/control
+[2.636s] 
+[2.636s] Installed /home/abdelrhaman/robot/ros_ws/src/build/control
+[2.636s] running symlink_data
+[2.669s] Invoked command in '/home/abdelrhaman/robot/ros_ws/src/build/control' returned '0': PYTHONPATH=/home/abdelrhaman/robot/ros_ws/src/build/control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/abdelrhaman/robot/ros_ws/src/install/control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/abdelrhaman/robot/ros_ws/src/build/control/build --no-deps symlink_data
